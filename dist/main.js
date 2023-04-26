@@ -1,1 +1,1 @@
-(() => { const e = document.createElement("h1"); e.textContent = "WOW!", document.querySelector("#root").append(e) })();
+(() => { const e = document.createElement("h1"); e.textContent = "WOW!", document.querySelector("#root").append(e); })();

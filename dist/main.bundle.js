@@ -80,24 +80,24 @@ eval("const header = document.createElement('h1');\nheader.textContent = 'WOW!';
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("2de3cc197175031c0235")
+/******/ 		__webpack_require__.h = () => ("2de3cc197175031c0235");
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
 /******/ 	(() => {
 /******/ 		__webpack_require__.g = (function() {
-/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			if (typeof globalThis === "object") return globalThis;
 /******/ 			try {
-/******/ 				return this || new Function('return this')();
+/******/ 				return this || new Function("return this")();
 /******/ 			} catch (e) {
-/******/ 				if (typeof window === 'object') return window;
+/******/ 				if (typeof window === "object") return window;
 /******/ 			}
 /******/ 		})();
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
-/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop));
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/load script */
@@ -117,9 +117,9 @@ eval("const header = document.createElement('h1');\nheader.textContent = 'WOW!';
 /******/ 			}
 /******/ 			if(!script) {
 /******/ 				needAttach = true;
-/******/ 				script = document.createElement('script');
+/******/ 				script = document.createElement("script");
 /******/ 		
-/******/ 				script.charset = 'utf-8';
+/******/ 				script.charset = "utf-8";
 /******/ 				script.timeout = 120;
 /******/ 				if (__webpack_require__.nc) {
 /******/ 					script.setAttribute("nonce", __webpack_require__.nc);
@@ -137,8 +137,8 @@ eval("const header = document.createElement('h1');\nheader.textContent = 'WOW!';
 /******/ 				script.parentNode && script.parentNode.removeChild(script);
 /******/ 				doneFns && doneFns.forEach((fn) => (fn(event)));
 /******/ 				if(prev) return prev(event);
-/******/ 			}
-/******/ 			var timeout = setTimeout(onScriptComplete.bind(null, undefined, { type: 'timeout', target: script }), 120000);
+/******/ 			};
+/******/ 			var timeout = setTimeout(onScriptComplete.bind(null, undefined, { type: "timeout", target: script }), 120000);
 /******/ 			script.onerror = onScriptComplete.bind(null, script.onerror);
 /******/ 			script.onload = onScriptComplete.bind(null, script.onload);
 /******/ 			needAttach && document.head.appendChild(script);
@@ -549,7 +549,7 @@ eval("const header = document.createElement('h1');\nheader.textContent = 'WOW!';
 /******/ 				scriptUrl = document.currentScript.src;
 /******/ 			if (!scriptUrl) {
 /******/ 				var scripts = document.getElementsByTagName("script");
-/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src;
 /******/ 			}
 /******/ 		}
 /******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
@@ -588,11 +588,11 @@ eval("const header = document.createElement('h1');\nheader.textContent = 'WOW!';
 /******/ 				var error = new Error();
 /******/ 				var loadingEnded = (event) => {
 /******/ 					if(waitingUpdateResolves[chunkId]) {
-/******/ 						waitingUpdateResolves[chunkId] = undefined
-/******/ 						var errorType = event && (event.type === 'load' ? 'missing' : event.type);
+/******/ 						waitingUpdateResolves[chunkId] = undefined;
+/******/ 						var errorType = event && (event.type === "load" ? "missing" : event.type);
 /******/ 						var realSrc = event && event.target && event.target.src;
-/******/ 						error.message = 'Loading hot update chunk ' + chunkId + ' failed.\n(' + errorType + ': ' + realSrc + ')';
-/******/ 						error.name = 'ChunkLoadError';
+/******/ 						error.message = "Loading hot update chunk " + chunkId + " failed.\n(" + errorType + ": " + realSrc + ")";
+/******/ 						error.name = "ChunkLoadError";
 /******/ 						error.type = errorType;
 /******/ 						error.request = realSrc;
 /******/ 						reject(error);
