@@ -1,0 +1,17 @@
+{
+  "name": "SFWebpack_E13",
+  "packageManager": "yarn@3.5.0",
+  "private": true,
+  "devDependencies": {
+    "html-webpack-plugin": "^5.5.1",
+    "json-server": "^0.17.3",
+    "webpack": "^5.80.0",
+    "webpack-cli": "^5.0.2",
+    "webpack-dev-server": "^4.13.3"
+  },
+  "scripts": {
+    "build": "webpack --config ./webpack.development.config.js",
+    "start:dev": "webpack serve --config ./webpack.development.config.js",
+    "start:prod": "webpack serve --config ./webpack.production.config.js"
+  }
+}
